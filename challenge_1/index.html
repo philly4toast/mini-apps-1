@@ -5,11 +5,11 @@
       /* style for each one of the divboxes for game  */
     .inputBox {
       text-align: center;
-      font-size: 35px;
+      font-size: 75px;
       font-weight: bold;
       font-family: Georgia, 'Times New Roman', Times, serif;
-      width: 50px;
-      height: 50px;
+      width: 100px;
+      height: 100px;
       /* color: darkred; */
     }
     </style>
@@ -24,22 +24,25 @@
 <table border='2'>
 
   <tr>
-      <td class='inputBox' onclick='nextMove(this);'></td>
+      <td id='b1' class='inputBox' onclick='nextMove(this);'></td>
       <!-- for each of these boxes, if you click it, call nextMove on 'this' which is set in app.js -->
-      <td class='inputBox' onclick='nextMove(this);'></td>
-      <td class='inputBox' onclick='nextMove(this);'></td>
+      <td id='b2' class='inputBox' onclick='nextMove(this);'></td>
+      <td id='b3' class='inputBox' onclick='nextMove(this);'></td>
   </tr>
   <tr>
-    <td class='inputBox' onclick='nextMove(this);'></td>
-    <td class='inputBox' onclick='nextMove(this);'></td>
-    <td class='inputBox' onclick='nextMove(this);'></td>
+    <td id='b4' class='inputBox' onclick='nextMove(this);'></td>
+    <td id='b5' class='inputBox' onclick='nextMove(this);'></td>
+    <td id='b6' class='inputBox' onclick='nextMove(this);'></td>
   </tr>
   <tr>
-    <td class='inputBox' onclick='nextMove(this);'></td>
-    <td class='inputBox' onclick='nextMove(this);'></td>
-    <td class='inputBox' onclick='nextMove(this);'></td>
+    <td id='b7' class='inputBox' onclick='nextMove(this);'></td>
+    <td id='b8' class='inputBox' onclick='nextMove(this);'></td>
+    <td id='b9' class='inputBox' onclick='nextMove(this);'></td>
   </tr>
 </table>
+<button>
+  <a href='javascript: startGame();'>RESET GAME</a>
+</button>
 
 <script src="app.js"></script>
 </body>
