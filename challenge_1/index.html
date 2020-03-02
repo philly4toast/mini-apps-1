@@ -15,14 +15,17 @@
     </style>
 
   </head>
-<body onload="startGame()">
-<h1>My First Heading</h1>
-<p id='message'> first paragraph.</p>
+  <body onload="startGame()">
+  <!-- <body> -->
+<h1>TIC-TAC-TOE-JAM</h1>
+
+<p id='message'> Are you ready??</p>
 
 <table border='2'>
-  Ticky-Tacky-Toe jams!
+
   <tr>
-      <td class='inputBox' onclick="console.log('lets change this to current player');"></td>
+      <td class='inputBox' onclick='nextMove(this);'></td>
+      <!-- for each of these boxes, if you click it, call nextMove on 'this' which is set in app.js -->
       <td class='inputBox' onclick='nextMove(this);'></td>
       <td class='inputBox' onclick='nextMove(this);'></td>
   </tr>
