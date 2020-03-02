@@ -1,2 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* style for each one of the divboxes for game  */
+    .inputBox {
+      text-align: center;
+      font-size: 35px;
+      font-weight: bold;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      width: 50px;
+      height: 50px;
+      /* color: darkred; */
+    }
+    </style>
+
+  </head>
+<body onload="startGame()">
+<h1>My First Heading</h1>
+<p id='message'> first paragraph.</p>
+
+<table border='2'>
+  Ticky-Tacky-Toe jams!
+  <tr>
+      <td class='inputBox' onclick="console.log('lets change this to current player');"></td>
+      <td class='inputBox' onclick='nextMove(this);'></td>
+      <td class='inputBox' onclick='nextMove(this);'></td>
+  </tr>
+  <tr>
+    <td class='inputBox' onclick='nextMove(this);'></td>
+    <td class='inputBox' onclick='nextMove(this);'></td>
+    <td class='inputBox' onclick='nextMove(this);'></td>
+  </tr>
+  <tr>
+    <td class='inputBox' onclick='nextMove(this);'></td>
+    <td class='inputBox' onclick='nextMove(this);'></td>
+    <td class='inputBox' onclick='nextMove(this);'></td>
+  </tr>
+</table>
+
+<script src="app.js"></script>
+</body>
+</html>
 
 
